@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "src\demo\Demo.csproj", "{49910ACE-2FAD-4F45-A28D-A7DD32DE726C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kdbndp.EntityFrameworkCore.KingbaseES", "src\EFCore.PG\Kdbndp.EntityFrameworkCore.KingbaseES.csproj", "{5998E9BC-DD95-4E0F-AEBF-998B2E510D69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49910ACE-2FAD-4F45-A28D-A7DD32DE726C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49910ACE-2FAD-4F45-A28D-A7DD32DE726C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49910ACE-2FAD-4F45-A28D-A7DD32DE726C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49910ACE-2FAD-4F45-A28D-A7DD32DE726C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5998E9BC-DD95-4E0F-AEBF-998B2E510D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5998E9BC-DD95-4E0F-AEBF-998B2E510D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5998E9BC-DD95-4E0F-AEBF-998B2E510D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5998E9BC-DD95-4E0F-AEBF-998B2E510D69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05E02C92-D444-47A0-9905-B9F63131E533}
+	EndGlobalSection
+EndGlobal

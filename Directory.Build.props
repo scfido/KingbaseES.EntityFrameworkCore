@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <VersionPrefix>6.0.7</VersionPrefix>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <NoWarn>$(NoWarn);NU5105</NoWarn>
+
+    <!-- We have lots of missing/problematic documentation in 6.0, suppress those warnings. Fixed in 7.0. -->
+    <NoWarn>$(NoWarn);CS1572;CS1573;CS1574;CS1591</NoWarn>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Npgsql.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <Copyright>Copyright 2022 © The Npgsql Development Team</Copyright>
+    <Company>Npgsql</Company>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>PostgreSQL</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/npgsql/efcore.pg</PackageProjectUrl>
+    <PackageIcon>postgresql.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)postgresql.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
