@@ -22,7 +22,7 @@ public class KdbndpTsQueryTypeMapping : KdbndpTypeMapping
         var builder = new StringBuilder();
         builder.Append("TSQUERY  ");
         var indexOfFirstQuote = builder.Length - 1;
-        query.Write(builder);
+        builder.Append(query);
         builder.Replace("'", "''");
         builder[indexOfFirstQuote] = '\'';
         builder.Append("'");

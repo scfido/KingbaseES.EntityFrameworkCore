@@ -88,7 +88,7 @@ public class KdbndpRelationalConnection : RelationalConnection, IKdbndpRelationa
 
     // Accessing Transaction.Current is expensive, so don't do it if Enlist is false in the connection string
     public override Transaction? CurrentAmbientTransaction
-        => DbConnection.Settings.Enlist ? Transaction.Current : null;
+        => /*DbConnection.Settings.Enlist ? Transaction.Current :*/ null;
 
     public virtual KdbndpRelationalConnection CloneWith(string connectionString)
     {

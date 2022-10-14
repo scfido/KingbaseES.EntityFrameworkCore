@@ -15,15 +15,11 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-    <Copyright>Copyright 2022 © The Npgsql Development Team</Copyright>
-    <Company>Npgsql</Company>
+    <Copyright></Copyright>
+    <Company></Company>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageLicenseExpression>PostgreSQL</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/npgsql/efcore.pg</PackageProjectUrl>
-    <PackageIcon>postgresql.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/scfido/efcore.pg</PackageProjectUrl>
+    <PackageIcon>kingbase.png</PackageIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)postgresql.png" Pack="true" PackagePath="" />
-  </ItemGroup>
 </Project>

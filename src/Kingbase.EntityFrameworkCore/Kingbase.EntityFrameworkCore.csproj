@@ -1,14 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>Kdbndp.EntityFrameworkCore.KingbaseES</AssemblyName>
+    <AssemblyName>KingbaseES.EntityFrameworkCore</AssemblyName>
     <RootNamespace>Kdbndp.EntityFrameworkCore.KingbaseES</RootNamespace>
 
-    <Authors>xie jian;</Authors>
+    <Authors>scfido;</Authors>
     <Description>KingbaseES/Kdbndp provider for Entity Framework Core.</Description>
     <PackageTags>KingbaseES;Entity Framework Core;entity-framework-core;ef;efcore;orm;sql</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <SignAssembly>True</SignAssembly>
+    <Copyright />
+    <PackageProjectUrl>https://github.com/scfido/KingbaseES.EntityFrameworkCore</PackageProjectUrl>
+    <PackageIcon>kingbase.png</PackageIcon>
+    <Company />
+    <Title>人大金仓 KingbaseES.EntityFrameworkCore .NET6驱动</Title>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);LibContentTarget</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,7 +33,18 @@
   </ItemGroup>
   
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Remove="E:\Git\Kingbase.EntityFrameworkCore\postgresql.png" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <None Include="..\..\kingbase.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -35,5 +52,13 @@
       <HintPath>..\..\KingbaseLib\Kdbndp.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Target Name="LibContentTarget">
+    <ItemGroup>
+      <TfmSpecificPackageFile Include="..\..\KingbaseLib\*">
+        <PackagePath>lib\$(TargetFramework)</PackagePath>
+      </TfmSpecificPackageFile>
+    </ItemGroup>
+  </Target>
   
 </Project>

@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EFCore.PG\Kdbndp.EntityFrameworkCore.KingbaseES.csproj" />
+    <ProjectReference Include="..\Kingbase.EntityFrameworkCore\Kingbase.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
 </Project>
